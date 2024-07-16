@@ -8,4 +8,4 @@ Generate binary instructions from .arm source file
 
 ## TODO
 
-- [ ] Fix the colouring on the R-format instructions
+- [X] Fix the colouring on the R-format instructions
