@@ -115,7 +115,7 @@ def color_string_instruction(instruction: str) -> str:
     if opcode == "B":
         return f"{OPCODE_COLOR}{opcode}{Style.RESET_ALL} {IMM_COLOR}{parts[1]}{Style.RESET_ALL}"
     elif opcode in ["ADD", "SUB"]:
-        return f"{OPCODE_COLOR}{opcode}{Style.RESET_ALL} {RD_COLOR}{parts[1]}{Style.RESET_ALL}, {RN_COLOR}{parts[2]}{Style.RESET_ALL}, {RM_COLOR}{parts[3]}{Style.RESET_ALL}"
+        return f"{OPCODE_COLOR}{opcode}{Style.RESET_ALL} {RM_COLOR}{parts[1]}{Style.RESET_ALL}, {RN_COLOR}{parts[2]}{Style.RESET_ALL}, {RD_COLOR}{parts[3]}{Style.RESET_ALL}"
     elif opcode in ["ADDI", "SUBI"]:
         return f"{OPCODE_COLOR}{opcode}{Style.RESET_ALL} {RD_COLOR}{parts[1]}{Style.RESET_ALL}, {RN_COLOR}{parts[2]}{Style.RESET_ALL}, {IMM_COLOR}{parts[3]}{Style.RESET_ALL}"
     elif opcode in ["CBZ", "CBNZ"]:
