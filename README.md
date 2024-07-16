@@ -4,7 +4,7 @@ Generate binary instructions from .arm source file
 
 ## Example with Print Output
 
-[<img src="Screenshot_2024-07-09_at_10.png">](https://github.com/DarkHawk727/ARM-Pseudo-Assembler/blob/main/Screenshot_2024-07-09_at_10.png)
+<img width="352" alt="Screenshot 2024-07-16 at 12 31 54 PM" src="https://github.com/user-attachments/assets/c4b4de51-2291-479f-9676-02a9ec9cbe9e">
 
 ## TODO
 
