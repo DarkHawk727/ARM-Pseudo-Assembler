@@ -36,7 +36,7 @@ def main() -> None:
     binaries = []
     with open(args.input_file, "r") as program:
         if args.print:
-            print("=" * 10 + " PROGRAM " + "=" * 10)
+            print(f"{' PROGRAM ':=^30}")
         for i, line in enumerate(program.readlines()):
             toks: List[str | int] = parse(line)
             binary = convert_instruction_to_int(toks, OPCODE_MAP)
@@ -49,7 +49,7 @@ def main() -> None:
                 print(f"{i}: {color_string_instruction(line.strip())}")
 
     if args.print:
-        print("=" * 10 + " BINARY " + "=" * 11)
+        print(f"{' BINARY ':=^30}")
         for i, entry in enumerate(binaries):
             print(f"{i}: {color_binary_instruction(entry, OPCODE_MAP)}")
 
